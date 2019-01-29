@@ -26,7 +26,7 @@ namespace std{
 	ostream& operator << (ostream& OS,const _BIGNUM& __n){
 		ostringstream oss;
 		string NUM_STR="";
-		for(vector<short>::const_iterator i = __n.NUM.begin();i!=__n.NUM.end();i++){
+		for(vector<short>::const_iterator i=__n.NUM.begin();i!=__n.NUM.end();i++){
 			oss<<*i;
 		}
 		NUM_STR=oss.str();
@@ -51,6 +51,7 @@ namespace std{
 		for(int i=NUM_STR.length()-1;i>=0;i--){
 			__n.NUM.push_back((char)NUM_STR[i]);
 		}
+		__n.deleteLeaderZero();
 		return IS;
 	}
 }
