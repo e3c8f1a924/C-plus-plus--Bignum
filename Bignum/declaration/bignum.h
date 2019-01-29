@@ -11,7 +11,7 @@ namespace std{
 		private:
 			vector<short> NUM;
 			bool MINUS;
-		
+			
 			inline void deleteLeaderZero();
 		
 		public:
