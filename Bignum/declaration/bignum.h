@@ -12,6 +12,8 @@ namespace std{
 			vector<short> NUM;
 			bool MINUS;
 		
+			inline void deleteLeaderZero();
+		
 		public:
 			_BIGNUM();
 			~_BIGNUM();
