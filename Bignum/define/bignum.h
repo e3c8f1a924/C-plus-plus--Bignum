@@ -9,6 +9,16 @@ namespace std{
 		
 	}
 	
+	void _BIGNUM::deleteLeaderZero(){
+		for(vector<short>::iterator i=this->NUM.end()-1;i!=this->NUM.begin();i--){
+			if(*i==0){
+				vector<short>::iterator() = this->NUM.erase(i);
+			}else{
+				break;
+			}
+		}
+	}
+	
 	void _BIGNUM::clear(){
 		vector<short>().swap(this->NUM);
 	}
