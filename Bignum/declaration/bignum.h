@@ -1,5 +1,5 @@
 #ifndef DEC_BIGNUM_HEADER
-#define DEC_BIGNUM_HEADER 1
+#define DEC_BIGNUM_HEADER
 
 #include <iostream>
 #include <sstream>
